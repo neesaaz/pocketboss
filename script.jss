@@ -25,8 +25,15 @@ function calculateBudget() {
   document.getElementById('result').innerText = resultText;
 }
 
-const toggle = document.getElementById("toggleDark");
-const body = document.querySelector("body");
+// ATTACH BUTTON EVENTS PROPERLY
+document.getElementById("toggleDark").addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+});
+
+document.getElementById("calculateBtn").addEventListener("click", function () {
+  calculateBudget();
+});
+
 
 toggle.addEventListener("click", function () {
   body.classList.toggle("dark-mode");
