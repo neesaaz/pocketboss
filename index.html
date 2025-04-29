@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PocketBoss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PocketBoss 🏡</h1>
+    <button id="toggleDark">Toggle Dark Mode</button>
+
+    <h2>Fixed Expenses</h2>
+    <input id="phone" type="number" placeholder="Phone Bill ₹">
+    <input id="chatgpt" type="number" placeholder="ChatGPT Plus ₹">
+    <input id="netflix" type="number" placeholder="Netflix ₹">
+    <input id="youtube" type="number" placeholder="YouTube Music ₹">
+
+    <h2>Variable Expenses</h2>
+    <input id="eatingOut" type="number" placeholder="Eating Out ₹">
+    <input id="transport" type="number" placeholder="Transport ₹">
+    <input id="groceries" type="number" placeholder="Groceries ₹">
+    <input id="shopping" type="number" placeholder="Shopping ₹">
+    <input id="misc" type="number" placeholder="Miscellaneous ₹">
+    <input id="savings" type="number" placeholder="Savings ₹">
+
+    <button onclick="calculateBudget()">Calculate</button>
+
+    <h3 id="result"></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
